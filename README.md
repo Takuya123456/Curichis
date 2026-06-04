@@ -1,5 +1,5 @@
 # Sistema de Ventas de Curichis
-**Curichazo** — Sistema web para el registro y gestión de ventas de curichis o marcianos.
+**RaspaLocos** — Sistema web para el registro y gestión de ventas de curichis o marcianos.
 
 ## 1. Descripción del Negocio
 
