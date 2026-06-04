@@ -1,11 +1,9 @@
 # Sistema de Ventas de Curichis
-**Curichazo** — Sistema web para el registro y gestión de ventas de curichis y marcianos, desarrollado en PHP puro con arquitectura MVC desde cero, Programación Orientada a Objetos (POO), PDO y MariaDB como base de datos.
-
----
+**Curichazo** — Sistema web para el registro y gestión de ventas de curichis o marcianos.
 
 ## 1. Descripción del Negocio
 
-Los pequeños negocios de venta de curichis y marcianos necesitan gestionar sus ventas, productos y clientes de forma precisa y centralizada. Este sistema reemplaza los registros manuales en papel o planillas físicas, eliminando problemas como:
+El pequeño negocio de venta de curichis o marcianos necesitan gestionar sus ventas, productos y clientes de forma precisa y centralizada. Este sistema reemplaza los registros manuales en papel o planillas físicas, eliminando problemas como:
 
 - Registros incompletos o manipulados
 - Alto costo administrativo por procesar ventas manualmente
@@ -18,7 +16,7 @@ Los pequeños negocios de venta de curichis y marcianos necesitan gestionar sus 
 ## 2. Problema y Solución
 
 ### Problema Identificado
-Los negocios de venta de curichis carecen de un sistema digital accesible para registrar, monitorear y gestionar sus ventas, productos y clientes. El control manual genera imprecisiones, pérdidas de información y dificulta la toma de decisiones basadas en datos confiables.
+El negocio de venta de curichis carecen de un sistema digital accesible para registrar, monitorear y gestionar sus ventas, productos y clientes. El control manual genera imprecisiones, pérdidas de información y dificulta la toma de decisiones basadas en datos confiables.
 
 ### Causas
 - Ausencia de una herramienta digital centralizada para registrar ventas
