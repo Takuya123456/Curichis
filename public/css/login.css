@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0a122c;
+    padding: 24px;
+}
+
+.container {
+    width: min(940px, 100%);
+    background: rgb(8, 72, 114);
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.352);
+    position: relative;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #030616;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    max-width: 425px;
+    object-fit: cover;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.right h2 {
+    padding: 15px;
+    color: #ffffff;
+    text-shadow:
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000;
+}
+
+form {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+    color: #cce4ff;
+    text-shadow:
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input {
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #5aaeff;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+form input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+form button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #092fa1;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000,
+        -1px -1px 0 #000000;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #1e40af;
+}
+
+@media (max-width: 760px) {
+    .container {
+        flex-direction: column;
+        max-width: 420px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        height: 220px;
+    }
+
+    .right {
+        padding: 32px 24px;
+    }
+}
