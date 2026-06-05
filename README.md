@@ -122,6 +122,7 @@ Relaciones:
 
 - `ventas.id_cliente` referencia a `clientes.id_cliente`.
 - `ventas.id_producto` referencia a `productos.id_producto`.
+ ``` sql
 CREATE DATABASE IF NOT EXISTS senai_asistencia
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
