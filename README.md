@@ -1,6 +1,8 @@
-# Sistema de Control de Asistencia de Empleados
-### Employee Attendance System
-Aplicación web para el registro y gestión de asistencia del personal, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
+# Sistema de Curichis
+**TRELLO**
+### Sistema de ventas de Raspalocos
+Aplicación web para el registro de ventas y gestión de productos, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
+
 
 ## 1. Descripción del Negocio
 
