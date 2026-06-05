@@ -1,5 +1,8 @@
 # Raspalocos - Sistema de Ventas e Inventario
 
+## TRELLO
+![Trello](Imagenes-fotos/Trello.png)
+
 Aplicación web para el registro de ventas, control de stock y gestión de fiados de curichis artesanales, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
 
 ## Tabla de Contenidos
@@ -98,10 +101,6 @@ cd raspalocos
 cp .env.example .env
 # Configurar base de datos en .env
 ```
-
-## TRELLO
-![Trello](Imagenes-fotos/Trello.png)
-
 ## Diagrama de Figma UI/UX
 *(Pendiente de subir las capturas del diseño en Figma)*
 
