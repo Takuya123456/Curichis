@@ -7,8 +7,12 @@ Aplicacion web desarrollada en PHP puro con arquitectura MVC, PDO y MySQL/MariaD
 ## Figma
 **Wireframe**
 ![Wireframe](Imagenes-fotos/Wireframe.png)
+
+
 **Ui**
 ![Ui](Imagenes-fotos/Ui.png)
+
+
 **Ux**
 ![Ux](Imagenes-fotos/Ux.png)
 
