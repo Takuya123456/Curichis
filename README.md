@@ -1,223 +1,147 @@
-# Sistema de Curichis
-**TRELLO**
-![Trello](Imagenes-fotos/Trello.png)
-### Sistema de ventas de Raspalocos
-Aplicación web para el registro de ventas y gestión de productos, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
+# Raspalocos - Sistema de Ventas e Inventario
 
+Aplicación web para el registro de ventas, control de stock y gestión de fiados de curichis artesanales, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
+
+## Tabla de Contenidos
+
+* Descripción del Negocio
+* Problema y Solución
+* Preanálisis
+* Análisis de Requisitos
+* Stack Tecnológico
+* Arquitectura del Proyecto
+* Instalación
+* Trello
+* Diagrama de Figma UI/UX
+* Base de Datos
 
 ## 1. Descripción del Negocio
 
-Las organizaciones modernas necesitan gestionar la asistencia de su personal de forma precisa y centralizada (Solo de un turno). Este sistema reemplaza los registros manuales en papel o planillas físicas, eliminando problemas como:
+**Raspalocos** es un negocio familiar dedicado a la preparación y venta de curichis artesanales peruanos hechos con frutas locales (aguaje, coco, chapo, maní, fresa, etc.). 
 
-- Registros incompletos o manipulados
-- Alto costo administrativo por procesar asistencias manualmente
-- Imposibilidad de generar reportes históricos de forma automática
-- Falta de trazabilidad y auditoría sobre las marcaciones
-- Dependencia de personal para consolidar información
+La dueña maneja todo el negocio de forma individual. Actualmente, el registro de ventas, control de stock y fiados se realiza de manera manual en cuadernos.
 
 ## 2. Problema y Solución
 
-### Problema Identificado
-Las empresas carecen de un sistema digital accesible para registrar, monitorear y gestionar la asistencia de sus empleados. El control manual genera imprecisiones, pérdidas de información y dificulta la toma de decisiones basadas en datos confiables.
+**Problema Identificado**  
+La dueña registra las ventas y fiados de forma manual, lo que provoca:
+- Dificultad para conocer las ventas diarias exactas
+- Pérdida de control sobre el stock de productos
+- Confusión y posibles pérdidas por fiados mal registrados
+- Imposibilidad de generar reportes rápidos de ventas e ingresos
 
-### Causas
-- Ausencia de una herramienta digital centralizada para marcar asistencia
-- Los registros en papel se pierden, deterioran o se alteran fácilmente
-- No existe diferenciación de roles entre quién administra y quién solo consulta
-- Es imposible generar reportes históricos de forma automática
+**Solución Propuesta**  
+Desarrollar un **Sistema Web de Control de Ventas e Inventario** que permita:
+- Registrar ventas al contado y a crédito (fiados)
+- Controlar el stock de productos automáticamente
+- Gestionar clientes y sus deudas pendientes
+- Generar reportes de ventas de forma sencilla
 
-### Efectos
-- Pérdida económica por pago incorrecto de horas trabajadas
-- Incapacidad de detectar patrones de ausentismo a tiempo
-- Mayor carga operativa para el área de Recursos Humanos
-
-### Solución Propuesta
-
-Desarrollar una aplicación web con **PHP + POO + MVC** que permita:
-
-- Autenticar usuarios con roles diferenciados (administrador / empleado)
-- Registrar asistencia con fecha y hora exactas usando PDO y MariaDB
-- Gestionar el catálogo de empleados y departamentos (CRUD completo)
-- Consultar y filtrar el historial de asistencias por empleado y fecha
-- Visualizar un dashboard con el estado de asistencia del día en curso
-- 
 ## 3. Preanálisis
 
-### Necesidades Identificadas
+**Necesidades Identificadas**
+- Registrar y gestionar clientes
+- Administrar productos con control de stock
+- Registrar ventas al contado y fiados
+- Actualizar stock automáticamente al vender
+- Consultar historial de ventas y fiados pendientes
+- Interfaz sencilla e intuitiva para la dueña
 
-1. Registrar quién entra y sale, con fecha y hora exacta
-2. Panel de control con el estado de asistencia del día
-3. Administrar el catálogo de empleados (crear, editar, eliminar)
-4. Organizar empleados por departamentos
-5. Consultar historial de asistencias filtrado por empleado y período
-6. Autenticar usuarios para proteger la información del sistema
-7. Diferenciar permisos entre administrador y empleado
+**Estudio de Viabilidad**
+- **Técnica**: PHP 8+, MariaDB y MVC
+- **Económica**: Todo el stack es gratuito
+- **Operacional**: Fácil de usar desde cualquier navegador
 
-### Estudio de Viabilidad
-
-#### Viabilidad Técnica
-- PHP 8+ disponible en prácticamente cualquier servidor web
-- MariaDB es un gestor gratuito, robusto y ampliamente documentado
-- Apache con `mod_rewrite` disponible en XAMPP para desarrollo local
-- La POO permite estructurar el sistema con clases, herencia y encapsulamiento
-- El patrón MVC está documentado en [`CONCEPTS.md`](./CONCEPTS.md)
-
-#### Viabilidad Económica
-- Stack completamente open source y gratuito (PHP, MariaDB, Apache, Git)
-- Entorno de desarrollo levantable localmente con XAMPP sin costo
-- No se requieren licencias de software adicionales
-
-#### Viabilidad Operacional
-- Los usuarios solo necesitan un navegador web para acceder
-- Administrable de forma remota una vez desplegado
-- La separación en módulos facilita la capacitación del personal
-
-### Alcance del Sistema
-
-#### Dentro del alcance
-- Autenticación con sesiones PHP y roles (administrador / empleado)
-- Módulo de empleados: CRUD completo
-- Módulo de departamentos: gestión de áreas
-- Módulo de asistencia: registro de entrada/salida e historial
-- Dashboard con resumen de asistencias del día
-- Layouts reutilizables (header, footer, navbar) — principio DRY
-
-#### Fuera del alcance
-- Integración con dispositivos biométricos
-- Módulo de nómina o cálculo de salarios
-- Aplicación móvil nativa (iOS / Android)
-- Notificaciones por correo o SMS
-- Integración con sistemas ERP externos
-
----
+**Alcance del Sistema**
+Dentro del alcance: Clientes, Productos, Ventas y Stock.  
+Fuera del alcance: App móvil y facturación electrónica.
 
 ## 4. Análisis de Requisitos
 
-### 4.1 Requisitos Funcionales
-Falta
-### 4.2 Requisitos No Funcionales
-Falta
+**Requisitos Funcionales**
+- CRUD de Clientes
+- CRUD de Productos con stock
+- Registro de ventas (contado y fiado)
+- Actualización automática de stock
+- Visualización de fiados pendientes
+
+**Requisitos No Funcionales**
+- Interfaz intuitiva y responsive
+- Código limpio y mantenible
+- Buenas prácticas de programación
+
 ## Stack Tecnológico
 
-| Capa | Tecnología |
-|---|---|
-| **Backend** | PHP 8+ — POO (Programación Orientada a Objetos) — MVC desde cero |
-| **Base de datos** | MariaDB — PDO (PHP Data Objects) con prepared statements |
-| **Frontend** | HTML5, CSS3, JavaScript — Vistas PHP con layouts reutilizables |
-| **Servidor web** | Apache — Reescritura de URLs vía `.htaccess` |
-| **Control de versiones** | Git + GitHub |
-| **Configuración** | Variables de entorno (`.env`) para credenciales |
----
+| Capa          | Tecnología |
+|---------------|----------|
+| Backend       | PHP 8+ — POO — MVC desde cero |
+| Base de datos | MariaDB — PDO con prepared statements |
+| Frontend      | HTML5, CSS3, JavaScript, Bootstrap |
+| Servidor      | Apache |
+| Control de versiones | Git + GitHub |
 
 ## Arquitectura del Proyecto
 
-El sistema aplica **POO** y **MVC** implementado desde cero. Los 4 pilares de POO en el proyecto:
-
-### Flujo de una Petición
-
-
-### Estructura del Proyecto
+El sistema aplica **POO** y el patrón **MVC** implementado desde cero.
 
 ## Instalación
 
-### Requisitos previos
+### Requisitos
 - PHP 8+
-- Servidor web local o hosting
 - MariaDB / MySQL
+- XAMPP o servidor Apache
 
 ### Pasos
-
 ```bash
-# 1. Clonar el repositorio
-git clone https://github.com/ojitoslanda/employee-attendance-system.git
-cd employee-attendance-system
-
-# 2. Configurar variables de entorno
+git clone https://github.com/tuusuario/raspalocos.git
+cd raspalocos
 cp .env.example .env
-# Editar .env con tus credenciales de base de datos
-
-# 3. Crear la base de datos
-
-
-# 4. Apuntar el servidor web a la carpeta public/
-
+# Configurar base de datos en .env
 ```
 
 ## TRELLO
-Falta integrar
+![Trello](Imagenes-fotos/Trello.png)
 
-### DIAGRAMA DE FIGMA UI/UX
+## Diagrama de Figma UI/UX
+*(Pendiente de subir las capturas del diseño en Figma)*
 
-## Base de datos
+## Base de Datos
+
 ```sql
-create database senai_asistencia;
-use senai_asistencia;
+CREATE DATABASE raspalocos_db;
+USE raspalocos_db;
 
+CREATE TABLE clientes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    dni VARCHAR(8) UNIQUE NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    apodo VARCHAR(50),
+    telefono VARCHAR(15),
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 
-create table cargo (
-id_cargo int auto_increment primary key,
-nombre_cargo varchar(50) not null
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    precio DECIMAL(6,2) NOT NULL,
+    stock INT NOT NULL DEFAULT 0
+);
 
-create table empleado(
-id_empleado int primary key auto_increment,
-nombre varchar(100) not null,
-apellido varchar(100) not null,
-dni varchar(8) unique not null,
-celular varchar(20),
-correo varchar (100) not null unique,
-id_cargo int not null,
-fecha_registro timestamp default current_timestamp,
-foreign key (id_cargo) references cargo(id_cargo)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE ventas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cliente_id INT,
+    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    tipo ENUM('contado', 'fiado') NOT NULL,
+    total DECIMAL(8,2) NOT NULL,
+    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+);
 
-create table usuario(
-id_usuario int auto_increment primary key,
-roles enum('admin', 'superadmin') default 'admin',
-nombre_usuario varchar (150) not null,
-clave varchar(250) not null
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-create table asistencia(
-id_asistencia int auto_increment primary key,
-fecha date not null,
-hora_entrada timestamp default current_timestamp not null,
-hora_salida timestamp default current_timestamp not null,
-estado enum('asistio', 'tardanza', 'falto') default 'falto' not null,
-id_empleado int not null,
-foreign key (id_empleado) references empleado(id_empleado)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-```
-
-### Diagrama Entidad-Relacion (DER)
-Falta integrar
-
- 
-### Modelo Relacional (MR)
-![MODELO_RELACIONAL](https://raw.githubusercontent.com/ojitoslanda/testing/refs/heads/master/img/db.png)
-
-### Cardinalidades
-
-Las cardinalidades describen cuántos registros de una tabla se relacionan con cuántos de otra.
-
-**cargo → empleado (1:N)**
-Un cargo puede estar asignado a muchos empleados.
-Un empleado solo puede tener un cargo.
-```
-cargo (1) -----< empleado (N)
-```
-
-**empleado → asistencia (1:N)**
-Un empleado puede tener muchos registros de asistencia (uno por día).
-Cada registro de asistencia pertenece a un solo empleado.
-```
-empleado (1) -----< asistencia (N)
-```
-
-**usuario**
-La tabla usuario es independiente. No se relaciona con empleado ni con asistencia.
-Representa las cuentas de acceso al sistema (administradores), no a los empleados.
-
-
-
-
+CREATE TABLE detalle_ventas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    venta_id INT,
+    producto_id INT,
+    cantidad INT NOT NULL,
+    subtotal DECIMAL(8,2) NOT NULL,
+    FOREIGN KEY (venta_id) REFERENCES ventas(id),
+    FOREIGN KEY (producto_id) REFERENCES productos(id)
+);
