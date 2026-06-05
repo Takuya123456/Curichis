@@ -3,7 +3,8 @@
 ![Trello](Imagenes-fotos/Trello.png)
 
 Aplicacion web desarrollada en PHP puro con arquitectura MVC, PDO y MySQL/MariaDB. Permite iniciar sesion, administrar clientes, productos, usuarios y registrar ventas descontando stock automaticamente.
-##Figma
+
+## Figma
 **Wireframe**
 ![Wireframe](Imagenes-fotos/Wireframe.png)
 **Ui**
