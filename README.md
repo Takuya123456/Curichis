@@ -1,6 +1,6 @@
 # Sistema de Curichis
 **TRELLO**
-![Trello](imagenes/Trello.png)
+![Trello](imagenes y foto/Imagenes/Trello.png)
 ### Sistema de ventas de Raspalocos
 Aplicación web para el registro de ventas y gestión de productos, desarrollada en **PHP puro con arquitectura MVC desde cero**, **Programación Orientada a Objetos (POO)**, **PDO** y **MariaDB** como base de datos.
 
