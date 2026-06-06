@@ -4,6 +4,22 @@
 
 Aplicacion web desarrollada en PHP puro con arquitectura MVC, PDO y MySQL/MariaDB. Permite iniciar sesion, administrar clientes, productos, usuarios y registrar ventas descontando stock automaticamente.
 
+
+| Código | Descripción |
+|---|---|
+| RF01 | El sistema debe permitir registrar un nuevo cliente con nombre, apellido y teléfono |
+| RF02 | El sistema debe permitir registrar una venta indicando comprador, producto, cantidad y fecha |
+| RF04 | El sistema debe mostrar el listado de todos los productos en stock |
+
+## Requerimientos No Funcionales
+
+| Código | Tipo | Descripción |
+|---|---|---|
+| RNF01 | Rendimiento | El sistema debe cargar cada pantalla en menos de 3 segundos |
+| RNF02 | Usabilidad | La interfaz debe ser intuitiva y fácil de usar sin necesidad de capacitación previa |
+| RNF03 | Seguridad | Solo usuarios autorizados podrán acceder al sistema mediante correo y contraseña |
+| RNF04 | Responsividad | El sistema debe funcionar correctamente en dispositivos móviles y desktop |
+
 ## Figma
 **Wireframe**
 ![Wireframe](Imagenes-fotos/Wireframe.png)
