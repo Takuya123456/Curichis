@@ -102,11 +102,12 @@ http://localhost/entregable_final
 ## Acceso inicial
 
 ```text
-Usuario: admin
-Clave: admin123
+Usuario: Walter
+Clave: 12345
 ```
+## Modelo Relacional
+![Mer](Imagenes-fotos/Mer.png)
 
-La clave inicial esta guardada con `password_hash`. Los usuarios creados desde el modulo de usuarios tambien se guardan cifrados.
 
 ## Base de datos
 
@@ -268,3 +269,5 @@ C:\xampp\mysql\bin\mysql.exe -u root -e "USE senai_asistencia; SHOW TABLES;"
 - Si cambias el nombre de la carpeta en `htdocs`, actualiza `APP_URL`.
 - Si MySQL usa clave, actualiza `DB_PASSWORD`.
 - Si usas otro puerto MySQL, actualiza `DB_PORT`.
+
+
