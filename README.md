@@ -110,7 +110,6 @@ La clave inicial esta guardada con `password_hash`. Los usuarios creados desde e
 
 ## Base de datos
 
-
 El archivo `database.sql` crea la base `senai_asistencia` y estas tablas:
 
 - `usuarios`: cuentas para iniciar sesion.
@@ -122,6 +121,8 @@ Relaciones:
 
 - `ventas.id_cliente` referencia a `clientes.id_cliente`.
 - `ventas.id_producto` referencia a `productos.id_producto`.
+
+  
  ``` sql
 CREATE DATABASE IF NOT EXISTS senai_asistencia
   CHARACTER SET utf8mb4
@@ -226,7 +227,7 @@ INSERT INTO ventas (
 UPDATE productos
 SET stock = stock - 2
 WHERE id_producto = 1;
-
+```
 
 ## Rutas principales
 
