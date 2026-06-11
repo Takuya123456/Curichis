@@ -286,4 +286,10 @@ C:\xampp\mysql\bin\mysql.exe -u root -e "USE senai_asistencia; SHOW TABLES;"
 - Si MySQL usa clave, actualiza `DB_PASSWORD`.
 - Si usas otro puerto MySQL, actualiza `DB_PORT`.
 
+**Tienda**
+![Cartel](Imagenes-fotos/Cartel.png)
+**Tienda**
+![Tienda](Imagenes-fotos/Tienda.png)
+
+
 
