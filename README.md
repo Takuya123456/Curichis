@@ -260,26 +260,6 @@ WHERE id_producto = 1;
 - `/usuarios` reporte de usuarios.
 - `/usuarios/registro` nuevo usuario.
 
-## Verificacion rapida
-
-Validar sintaxis PHP:
-
-```powershell
-Get-ChildItem app -Recurse -Filter *.php | ForEach-Object { C:\xampp\php\php.exe -l $_.FullName }
-```
-
-Probar conexion a MySQL:
-
-```powershell
-C:\xampp\mysql\bin\mysqladmin.exe -u root ping
-```
-
-Ver tablas creadas:
-
-```powershell
-C:\xampp\mysql\bin\mysql.exe -u root -e "USE senai_asistencia; SHOW TABLES;"
-```
-
 ## Notas de configuracion
 
 - Si cambias el nombre de la carpeta en `htdocs`, actualiza `APP_URL`.
